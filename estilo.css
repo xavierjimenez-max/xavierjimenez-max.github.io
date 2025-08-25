@@ -1,0 +1,193 @@
+/* ====== Estilos Generales ====== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+/* ====== Encabezado ====== */
+header {
+  background: linear-gradient(to right, #2563eb, #1e3a8a);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 22px;
+}
+
+nav a {
+  margin-left: 20px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+/* ====== Hero ====== */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 80px 20px;
+  background: url('hero-imagen.jpg') center/cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-top: 20px;
+  background: #facc15;
+  color: #222;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fde047;
+}
+
+/* ====== Secciones ====== */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 25px;
+}
+
+.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+
+.image-box {
+  background: #e5e7eb;
+  border-radius: 12px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6b7280;
+  font-weight: bold;
+}
+
+/* ====== Beneficios ====== */
+.cards {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .image-box {
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+/* ====== Plan de Estudios ====== */
+.plan {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* ====== Contacto ====== */
+.contact {
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+.contact input, .contact button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.contact input {
+  color: #333;
+}
+
+.contact button {
+  background: #facc15;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #fde047;
+}
+
+/* ====== Footer ====== */
+footer {
+  background: #111827;
+  color: #9ca3af;
+  text-align: center;
+  padding: 20px;
+}

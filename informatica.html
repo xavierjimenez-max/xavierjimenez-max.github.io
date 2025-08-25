@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTP Informática</title>
+    <link rel="icon" type="image/jpg" href="imagenes/aniversario.jpg">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Conviértete en un Profesional de la Informática</h2>
+      <p>Domina tecnologías modernas y abre tu camino hacia un futuro lleno de oportunidades.</p>
+      <a href="#contact" class="btn">¡Inscríbete Ahora!</a>
+    </div>
+  </section>
+
+  <!-- Sobre la carrera -->
+  <section id="about" class="grid two-col">
+    <div>
+      <h3>¿Por qué estudiar Informática?</h3>
+      <p>
+        La carrera técnica en informática forma profesionales capaces de crear,
+        implementar y administrar soluciones tecnológicas para empresas e instituciones.
+      </p>
+      <p>
+        Aprenderás programación, redes, bases de datos y seguridad informática
+        con un enfoque práctico y actualizado.
+      </p>
+    </div>
+    <div class="image-box"><img src="imagenes/info.jpg" alt="" width="500" height="300"></div>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="benefits">
+    <h3 class="center">Beneficios de la Carrera</h3>
+    <div class="grid cards">
+      <div class="card">
+        <div class="image-box"><img src="imagenes/labkaren.jpg" alt="" width="300" height="170"></div>
+        <h4>Alta Empleabilidad</h4>
+        <p>La informática es una de las áreas con mayor demanda laboral en el mundo.</p>
+      </div>
+      <div class="card">
+        <div class="image-box"><img src="imagenes/labkevin.jpg" alt="" width="300" height="170"></div>
+        <h4>Formación Actualizada</h4>
+        <p>Estudia las tecnologías más modernas en programación y seguridad informática.</p>
+      </div>
+      <div class="card">
+        <div class="image-box"><img src="imagenes/labkaren2.jpg" alt="" width="300" height="170"></div>
+        <h4>Práctica Constante</h4>
+        <p>Acceso a laboratorios equipados y proyectos reales durante tu formación.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan de estudios -->
+  <section id="plan">
+    <h3 class="center">Plan de Estudios</h3>
+    <div class="grid plan">
+      <ul>
+        <li>✅ Fundamentos de Programación</li>
+        <li>✅ Diseño y Desarrollo Web</li>
+        <li>✅ Redes y Telecomunicaciones</li>
+        <li>✅ Bases de Datos</li>
+      </ul>
+      <ul>
+        <li>✅ Ciberseguridad</li>
+        <li>✅ Administración de Sistemas</li>
+        <li>✅ Inteligencia Artificial Básica</li>
+        <li>✅ Proyecto Final de Graduación</li>
+      </ul>
+    </div>
+  </section>
+
+   <!-- ✅ FORMULARIO QUE ENVÍA AL CORREO -->
+    <!-- Cambia tu-correo@ejemplo.com por tu correo -->
+    <form action="https://formsubmit.co/droxzz908@gmail.com" method="POST">
+      <!-- Campos visibles -->
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
+      <input type="tel" name="telefono" placeholder="Teléfono">
+      <select name="tipo" required>
+        <option value="" disabled selected>Tipo de solicitud</option>
+        <option value="Inscripción">Inscripción</option>
+        <option value="Información">Información</option>
+        <option value="Beca">Solicitud de Beca</option>
+      </select>
+      <textarea name="mensaje" placeholder="Escribe tu mensaje o comentarios" rows="5" required></textarea>
+
+      <!-- Configuración FormSubmit -->
+      <input type="hidden" name="_subject" value="Nueva solicitud de Administración Hotelera">
+      <input type="hidden" name="_captcha" value="false">
+      <!-- Redirección después de enviar (opcional) -->
+      <input type="hidden" name="_next" value="gracias.html">
+
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+
+    <!-- Mensaje guía por si no usas _next -->
+    <p class="center" style="margin-top:10px;font-size:.9rem;">
+      *Recibirás confirmación en pantalla al enviar el formulario.*
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Carrera Técnica en Informática. Todos los derechos reservados.</p>
+    <a href="carreras.html">REGRESAR A LAS CARRERAS</a>
+    <p></p>
+    <a href="fdrprincipal.html">REGRESAR ALA PAGINA PRINCIPAL</a>
+  </footer>
+</body>
+</html>
